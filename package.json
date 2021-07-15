@@ -1,0 +1,19 @@
+{
+  "name": "project-8(Chartered-accountent)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.2",
+    "sass": "^1.35.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch ./scss/main.scss ./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
