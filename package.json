@@ -11,7 +11,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "sass --watch ./scss/main.scss ./css/style.css"
+    "scss": "sass --watch ./scss/sub-main.scss ./css/style-contact.css"
   },
   "keywords": [],
   "author": "",

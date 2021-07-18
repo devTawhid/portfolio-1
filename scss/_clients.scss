@@ -1,0 +1,36 @@
+/*clients section css stats*/
+.clients {
+  .inner_content {
+    text-align: center !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+
+    .icons {
+      font-size: 32px;
+    }
+    .client-name {
+      color: #1a1a1a;
+      font-family: $body-ff;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .client-des {
+      color: #cad0db;
+      font-size: 13px;
+    }
+    &:hover {
+      box-shadow: 0 40px 120px -40px rgb(0 0 0 / 24%);
+    }
+  }
+
+  .companies {
+    margin-top: 100px;
+    img {
+      width: 60%;
+      height: auto;
+    }
+  }
+}
+/*clients section css ends*/

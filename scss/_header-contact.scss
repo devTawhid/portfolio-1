@@ -1,0 +1,34 @@
+.page-header {
+  background-image: url(/images/bg-06-free-img.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  .overlay {
+    background-color: #0c49c2;
+    opacity: 0.88;
+
+    .background-image {
+      background-image: url(/images/grad-white-curve-bg.svg);
+      background-size: cover;
+      background-position: center left;
+      background-repeat: no-repeat;
+
+      .blank-space {
+        height: 107px;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        height: 350px;
+
+        h6 {
+          margin-bottom: 2rem;
+          color: #cad0db;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}

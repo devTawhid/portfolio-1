@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Customization of Bootstrap*/
+// for removing horizontal scroll bar
+
+body {
+  overflow-x: hidden;
+}
+
+/* Global css starts */
+body {
+  font-family: $body-ff;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $h-ff;
+  color: $primary-hc;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.125rem;
+}
+h6 {
+  font-size: 0.875rem;
+  font-family: $h-ff;
+  color: $primary-c;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1rem;
+  color: $text-c;
+}
+
+.btn__solid {
+  border-radius: 4px;
+  padding: 0.9rem 1.5rem;
+
+  font-family: $body-ff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  color: $primary-c;
+  background-color: #fff;
+  border: 1px solid $primary-c;
+
+  &:hover {
+    background-color: white;
+    color: $primary-c;
+  }
+}
+
+.btn__outline {
+  border-radius: 4px;
+  padding: 0.9rem 1.5rem;
+
+  font-family: $body-ff;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  color: $primary-c;
+  background-color: transparent;
+  border: 1px solid $primary-c;
+
+  &:hover {
+    background-color: $primary-c;
+    color: white;
+  }
+}
+
+.icons {
+  color: $primary-c !important;
+}
+
+.inner_sections {
+  padding: 104px 0;
+}
+/* Global css ends */

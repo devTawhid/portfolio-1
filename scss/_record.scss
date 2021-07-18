@@ -1,0 +1,32 @@
+/* Record section css starts */
+.record {
+  background-color: #f7f8f9;
+
+  .inner_content {
+    text-align: center !important;
+  }
+
+  .card {
+    border-radius: 1rem;
+    border: transparent;
+
+    .icons {
+      font-size: 32px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: rgba(26, 92, 224, 0.1);
+      border-radius: 50%;
+      transition: all 1s ease;
+
+      :hover {
+        transition: all 1s ease;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+/* Record section css ends */

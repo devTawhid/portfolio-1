@@ -6571,10 +6571,11 @@ p {
 /* Global css ends */
 /*navigation css start*/
 .ChNav {
-  background-color: #0c48bf;
+  background-color: #0c48bf80;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: rgba(255, 255, 255, 0.1);
+  z-index: 99999;
 }
 .ChNav__ul {
   height: 100px;
@@ -6607,143 +6608,76 @@ p {
 }
 
 /*navigation css ends*/
-/*Banner section css starts*/
-.banner {
-  max-height: 750px;
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #0c49c2 0%, #083999 100%);
-}
-.banner .overlay {
-  background-image: url(../images/grad-white-curve-bg.svg);
+.page-header {
+  background-image: url(/images/bg-06-free-img.jpg);
+  background-position: center center;
   background-size: cover;
+}
+.page-header .overlay {
+  background-color: #0c49c2;
+  opacity: 0.88;
+}
+.page-header .overlay .background-image {
+  background-image: url(/images/grad-white-curve-bg.svg);
+  background-size: cover;
+  background-position: center left;
   background-repeat: no-repeat;
 }
-.banner .overlay img {
-  width: 500px;
-  height: auto;
-  object-fit: cover;
+.page-header .overlay .background-image .blank-space {
+  height: 107px;
 }
-.banner .overlay h1 {
-  margin-top: 7rem;
+.page-header .overlay .background-image .content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 350px;
 }
-.banner .overlay h5 {
-  margin-top: 2rem;
-  color: #fff;
-}
-.banner .overlay .text {
-  margin-top: 1.2rem;
-  color: #e9ebef;
-  line-height: 2rem;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
-}
-.banner .overlay .btn__outline {
-  color: white !important;
-}
-.banner .overlay .tag-icons {
-  color: white !important;
+.page-header .overlay .background-image .content h6 {
+  margin-bottom: 2rem;
+  color: #cad0db;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-/* Banner section css ends*/
-/* Services section css starts */
-.services {
-  background-image: url(../images/bg-blob-blue.svg);
-}
-.services .inner_content {
-  text-align: center;
-}
-.services .main_content img {
-  width: 100%;
-  border-radius: 1rem;
-}
-
-/* Services section css ends */
-/* Record section css starts */
-.record {
-  background-color: #f7f8f9;
-}
-.record .inner_content {
-  text-align: center !important;
-}
-.record .card {
-  border-radius: 1rem;
-  border: transparent;
-}
-.record .card .icons {
-  font-size: 32px;
+.contact__info__box__icon {
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(26, 92, 224, 0.1);
   border-radius: 50%;
   transition: all 1s ease;
 }
-.record .card .icons :hover {
-  transition: all 1s ease;
-  transform: scale(1.1);
+.contact__info__box__info p {
+  font-size: 18px;
+  line-height: 30px;
 }
-
-/* Record section css ends */
-/*clients section css stats*/
-.clients .inner_content {
-  text-align: center !important;
-}
-.clients .card {
-  border-radius: 1rem;
-}
-.clients .card .icons {
-  font-size: 32px;
-}
-.clients .card .client-name {
-  color: #1a1a1a;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  line-height: 1.5;
-}
-.clients .card .client-des {
-  color: #cad0db;
-  font-size: 13px;
-}
-.clients .card:hover {
-  box-shadow: 0 40px 120px -40px rgba(0, 0, 0, 0.24);
-}
-.clients .companies {
-  margin-top: 100px;
-}
-.clients .companies img {
-  width: 60%;
-  height: auto;
-}
-
-/*clients section css ends*/
-/* quote section css starts*/
-.quote {
-  margin-top: 50px;
-  background-image: url(../images/bg-01-free-img.jpg);
-}
-.quote .overlay {
-  background-color: #000f23a6;
-  background-image: url(../images/grad-white-curve-bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.quote .overlay img {
-  margin-top: -150px;
-}
-.quote .overlay input {
-  width: 100%;
-}
-.quote .overlay h3,
-.quote .overlay h6 {
+.contact__info .social-icon {
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: #1a5ce0;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 100%;
   color: white;
 }
-.quote .overlay .form-input {
+
+/*form styling*/
+input {
+  width: 100%;
+}
+
+.form-input {
   padding: 10px 0;
 }
-.quote .overlay input {
+
+input {
   width: 90%;
   color: #666;
   font-size: 1rem;
@@ -6758,12 +6692,23 @@ p {
   box-sizing: border-box;
   transition: all 0.2s linear;
 }
-.quote .overlay .btn__solid {
+
+.btn__solid {
   background: #1a5ce0;
   color: white;
 }
 
-/* quote section css ends*/
+/*form styling end*/
+.contact__form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  border-left: 1px solid #ddd;
+}
+.contact__info {
+  padding-top: 100px;
+}
+
 /*footer css start*/
 footer {
   padding-top: 50px;
@@ -6815,4 +6760,4 @@ footer .footer-bottom {
 
 /*footer css ends*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-contact.css.map */
